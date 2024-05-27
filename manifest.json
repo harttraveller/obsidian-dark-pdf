@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-dark-pdf",
 	"name": "Dark PDF",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "1.5.4",
 	"description": "Obsidian plugin for PDFs: If bright, make dark, if dark, leave as is. Useful for dark mode enthusiasts.",
 	"author": "@harttraveller",
