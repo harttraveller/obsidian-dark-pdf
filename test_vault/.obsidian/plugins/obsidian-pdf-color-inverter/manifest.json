@@ -1,7 +1,7 @@
 {
-	"id": "obsidian-pdf-color-inverter",
+	"id": "pdf-color-inverter",
 	"name": "PDF Color Inverter",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"minAppVersion": "1.5.4",
 	"description": "Obsidian plugin to invert PDF colors by changing extension from '.pdf' to '.invert.pdf'.",
 	"author": "@harttraveller",

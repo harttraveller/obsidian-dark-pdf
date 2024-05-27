@@ -1,17 +1,18 @@
-/* handle opened pdf */
-
-.workspace-leaf-content.inverted-pdf[data-type=pdf] .pdf-viewer .canvasWrapper {
+/* styles to apply to elements with .inverted-pdf class or '.invert.pdf' source */
+.workspace-leaf-content.inverted-pdf[data-type=pdf] .pdf-viewer .canvasWrapper,
+.markdown-source-view .internal-embed.pdf-embed.is-loaded[src$=".invert.pdf"] .pdf-container {
     filter: invert(1) hue-rotate(180deg);
     mix-blend-mode: screen;
 }
 
-/* handle inline embeds (no js needed, for this at least) */
 
-.markdown-source-view .internal-embed.pdf-embed.is-loaded[src$=".invert.pdf"] .pdf-container {
-    filter: invert(1) hue-rotate(180deg);
+/* fixing flash, animation delay is smallest possible time where white flash is gone */
+.markdown-source-view .internal-embed.pdf-embed .pdf-container {
+    opacity: 0;
+    animation: fadeIn 0.1s ease-in;
+    animation-delay: 0.15s;
+    animation-fill-mode: forwards;
 }
-
-/* fixing white flash */
 
 @keyframes fadeIn {
     0% {
@@ -21,27 +22,4 @@
     100% {
         opacity: 1;
     }
-}
-
-.markdown-source-view .internal-embed.pdf-embed .pdf-container {
-    opacity: 0;
-    animation: fadeIn 0.1s ease-in;
-    /* smallest possible time where white flash is gone */
-    animation-delay: 0.15s;
-    animation-fill-mode: forwards;
-}
-
-/* generic customizations */
-
-.pdf-viewer.removePageBorders .page {
-    margin: 0;
-    border: none !important;
-}
-
-.pdf-viewer .canvasWrapper {
-    box-shadow: none;
-}
-
-.pdf-viewer .page {
-    border: none;
 }
