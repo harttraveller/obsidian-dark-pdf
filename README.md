@@ -7,7 +7,7 @@
 
 ## Install
 
-If you want to install this, you can do so by first installing and enabling the Beta Reviewers Auto-update Tester (BRAT) plugin ([GitHub](https://github.com/TfTHacker/obsidian42-brat), [Obsidian](obsidian://show-plugin?id=obsidian42-brat)), then copy the URL of this repository:
+If you want to install this, you can do so by first installing and enabling the [Beta Reviewers Auto-update Tester (BRAT)](https://github.com/TfTHacker/obsidian42-brat) plugin, then copy the URL of this repository:
 
 ```
 https://github.com/harttraveller/obsidian-dark-pdf
