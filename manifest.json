@@ -1,9 +1,9 @@
 {
-	"id": "obsidian-dark-pdf",
-	"name": "Dark PDF",
-	"version": "1.0.1",
+	"id": "obsidian-pdf-color-inverter",
+	"name": "PDF Color Inverter",
+	"version": "1.0.2",
 	"minAppVersion": "1.5.4",
-	"description": "Obsidian plugin for PDFs: If bright, make dark, if dark, leave as is. Useful for dark mode enthusiasts.",
+	"description": "Obsidian plugin to invert PDF colors by changing extension from '.pdf' to '.invert.pdf'.",
 	"author": "@harttraveller",
 	"authorUrl": "https://github.com/harttraveller",
 	"isDesktopOnly": false
