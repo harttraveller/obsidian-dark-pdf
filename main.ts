@@ -1,4 +1,4 @@
-import { Plugin, TFile, Notice, FileView, HoverPopover } from 'obsidian';
+import { Plugin, TFile, FileView } from 'obsidian';
 export default class DarkPDFViewer extends Plugin {
 	async onload() {
 		this.registerEvent(
@@ -12,7 +12,6 @@ export default class DarkPDFViewer extends Plugin {
 	addInversionClass(file: TFile | null) {
 		if (file !== null) {
 			if (file.extension === 'pdf') {
-				// new Notice('pdf opened');
 				const view = this.app.workspace.getActiveViewOfType(FileView);
 				// setting the initial opacity to zero and then turning it
 				// to 1 after delay fixes an issue where there is a momentary
@@ -21,10 +20,8 @@ export default class DarkPDFViewer extends Plugin {
 					const container = view.containerEl;
 					container.style.opacity = '0';
 					if (file.basename.endsWith('.invert')) {
-						// new Notice('inverted-pdf class added');
 						container.classList.add('inverted-pdf');
 					} else {
-						// new Notice('no class added');
 						container.classList.remove('inverted-pdf');
 					}
 					setTimeout(() => {
