@@ -1,5 +1,4 @@
 /* styles to apply to elements with .inverted-pdf class or '.invert.pdf' source */
-
 .workspace-leaf-content.inverted-pdf[data-type=pdf] .pdf-viewer .canvasWrapper,
 .markdown-source-view .internal-embed.pdf-embed.is-loaded[src$=".invert.pdf"] .pdf-container {
     filter: invert(1) hue-rotate(180deg);
