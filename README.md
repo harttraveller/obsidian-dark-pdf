@@ -6,7 +6,6 @@ Obsidian plugin for color inverting PDFs. Allows user to control what PDFs are i
 
 To invert a PDF, replace the `.pdf` extension with `.invert.pdf` - it should now be inverted when opened in obsidian or embedded in a page. This should work for desktop and mobile (tested in emulator for mobile).
 
-
 ## Installation
 
 **Via Beta Plugin Extension**
