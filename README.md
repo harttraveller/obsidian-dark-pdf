@@ -14,7 +14,6 @@ This plugin simply adds a CSS class container a filter to relevant PDF elements 
 
 ## Notes
 
-- You can test this plugin by cloning this repository and then opening `test_vault` in Obsidian.
 - If you rename the PDF while it is already open, you will need to close it and reopen it to apply the inversion filter.
 - PDF file views and embeds are supported, but not hover popover previews, this may be added in later release, subject to demand.
 - This extension does not actually modify any file data, it only adds a CSS class with an inversion filter to the PDF viewer for PDFs with the `.invert.pdf` extension. If the file is opened in a program besides obsidian, these PDFs will not be inverted.
@@ -45,12 +44,12 @@ Open a terminal in the obsidian vault you want to work in and run:
 
 ```sh
 cd .obsidian/plugins
-git clone https://github.com/harttraveller/obsidian-pdf-color-inverter
+git clone https://github.com/harttraveller/obsidian-pdf-color-inverter.git
 cd obsidian-pdf-color-inverter
 npm install
 npm run dev
 ```
 
-Then go to obsidian, enable community plugins, filter by installed, and turn on 'PDF Color Inverter'.
+Then go to obsidian, enable community plugins, filter by installed, and turn on 'PDF Color Inverter'. If you want to test this plugin in an isolated vault, you can open the `test_vault` directory in the cloned repository as a vault in Obsidian.
 
 More information on plugin development can be found in the [Obsidian Developer Docs](https://docs.obsidian.md/Home) ([GitHub Repository](https://github.com/obsidianmd/obsidian-developer-docs)).
