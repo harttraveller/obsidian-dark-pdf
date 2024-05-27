@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "obsidian-dark-pdf",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "Obsidian plugin for PDFs: If bright, make dark, if dark, leave as is. Useful for dark mode enthusiasts. ",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
