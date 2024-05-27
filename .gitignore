@@ -6,6 +6,7 @@ node_modules
 local
 
 main.js
+!test_vault/.obsidian/plugins/obsidian-pdf-color-inverter/main.js
 
 package-lock.json
 data.json
