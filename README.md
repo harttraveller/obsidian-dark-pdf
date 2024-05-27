@@ -14,7 +14,7 @@ This plugin simply adds a CSS class container a filter to relevant PDF elements 
 
 ## Notes
 
-- You can test this plugin by cloning this repository and then opening `example_vault` in Obsidian.
+- You can test this plugin by cloning this repository and then opening `test_vault` in Obsidian.
 - If you rename the PDF while it is already open, you will need to close it and reopen it to apply the inversion filter.
 - PDF file views and embeds are supported, but not hover popover previews, this may be added in later release, subject to demand.
 - This extension does not actually modify any file data, it only adds a CSS class with an inversion filter to the PDF viewer for PDFs with the `.invert.pdf` extension. If the file is opened in a program besides obsidian, these PDFs will not be inverted.
