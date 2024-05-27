@@ -1,5 +1,6 @@
 .vscode
 .DS_Store
+obsidian42-brat
 
 node_modules
 local
@@ -8,5 +9,6 @@ main.js
 
 package-lock.json
 data.json
+workspace.json
 
 *.map
