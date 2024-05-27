@@ -1,8 +1,33 @@
-/*
+/* handle opened pdf */
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.workspace-leaf-content.inverted-pdf[data-type=pdf] .pdf-viewer .canvasWrapper {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+}
 
-If your plugin does not need CSS, delete this file.
 
-*/
+/* handle inline embeds (no js needed) */
+
+.markdown-source-view .internal-embed.pdf-embed.is-loaded[src$=".invert.pdf"] .pdf-container {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+}
+
+/* fixing white flash */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.markdown-source-view .internal-embed.pdf-embed .pdf-container {
+    opacity: 0;
+    animation: fadeIn 0.1s ease-in;
+    animation-delay: 0.15s;
+    animation-fill-mode: forwards;
+}
