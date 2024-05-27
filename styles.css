@@ -5,12 +5,10 @@
     mix-blend-mode: screen;
 }
 
-
 /* handle inline embeds (no js needed) */
 
 .markdown-source-view .internal-embed.pdf-embed.is-loaded[src$=".invert.pdf"] .pdf-container {
     filter: invert(1) hue-rotate(180deg);
-    mix-blend-mode: screen;
 }
 
 /* fixing white flash */
@@ -28,6 +26,22 @@
 .markdown-source-view .internal-embed.pdf-embed .pdf-container {
     opacity: 0;
     animation: fadeIn 0.1s ease-in;
+    /* smallest possible time where white flash is gone */
     animation-delay: 0.15s;
     animation-fill-mode: forwards;
+}
+
+/* generic customizations */
+
+.pdf-viewer.removePageBorders .page {
+    margin: 0;
+    border: none !important;
+}
+
+.pdf-viewer .canvasWrapper {
+    box-shadow: none;
+}
+
+.pdf-viewer .page {
+    border: none;
 }
